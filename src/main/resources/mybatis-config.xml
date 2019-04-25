@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.bnp.scm.services.common.vo.UserVO" alias="userVO"/>
+		<!--
+		<typeAlias type="com.bnp.bnpux.common.vo.UserPreferenceVO" alias="userPrefVO"/>
+		<typeAlias type="com.bnp.scm.services.common.vo.NameValueVO" alias="nameValue"/>
+		<typeAlias alias="userInfoVO" type="com.bnp.bnpux.common.vo.UserInfoVO"/>
+		<typeAlias alias="orgVO" type="com.bnp.bnpux.common.vo.OrganizationVO"/>
+		<typeAlias alias="whiteLabelVO" type="com.bnp.bnpux.common.vo.WhiteLabelVO"/>
+		<typeAlias alias="UserBranchVO" type="com.bnp.bnpux.common.vo.UserBranchVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.CountryFlagVO" alias="CountryFlagVO"/>
+		-->
+		<!-- Added for New UX 9.0 - User story S18,S19 starts -->		
+		<!--<typeAlias type="com.bnp.bnpux.common.vo.EntitlementVO" alias="entitlementVO"/>-->
+		<!-- Added for New UX 9.0 - User story S18,S19 ends -->		
+		
+		<!-- Common Service Layer VOs Start -->
+		
+		<typeAlias type="com.bnp.csc.services.common.vo.BranchVO" alias="BranchVO"/>
+		
+		<!-- Common Service Layer VOs End-->
+		<!-- Added for New UX 9.0 - User story C10 audit trail starts -->		
+		<!--<typeAlias type="com.bnp.bnpux.vo.requestVO.AuditRequestVO" alias="auditRequestVO"/>-->
+		<!-- Added for New UX 9.0 - User story C10 audit trail ends -->
+<!--
+		<typeAlias type="com.bnp.bnpux.vo.responseVO.PaymentOrderResponseVO" alias="paymentOrderResponseVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.PaymentOrderRequestVO" alias="paymentOrderRequestVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.PaymentOrderPopupRequestVO" alias="paymentOrderPopupRequestVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.PaymentOrderSummaryVO" alias="paymentOrderDetailsVO"/>
+		<typeAlias alias="discountRequestVO" type="com.bnp.scm.services.discounting.vo.DiscountRequestVO" />
+-->
+
+		<!-- Start Call out type alias -->
+<!--
+		<typeAlias type="com.bnp.bnpux.common.vo.PaymentOrderCreditNoteLineItemVO" alias="paymentOrderCreditNoteLineItemVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.PaymentOrderInvoiceDetailsCallOutVO" alias="paymentOrderInvoiceDetailsCallOutVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.PaymentOrderAvailableamtCalloutVO" alias="paymentOrderAvailableamtCalloutVO"/>
+-->
+		<!-- Modified below class name for AlreadyPaid and Inprocess Callouts -->
+<!--
+ 		<typeAlias type="com.bnp.bnpux.common.vo.InProcessAlreadySettCalloutVO" alias="settlementInprocessAlreadySettlemntDetailsCalloutVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.SettlementCreditNoteLineItemVO" alias="settlementCreditNoteLineItemVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.SettlementInvoiceDetailsCallOutVO" alias="settlementInvoiceDetailsCallOutVO"/>
+-->
+		<!-- End Call out type alias -->
+		
+		<!-- Holiday type alias -->
+<!--
+		<typeAlias type="com.bnp.bnpux.common.vo.HolidayVO" alias="holidayVO"/>
+-->
+
+		<!-- Discount Popup Details - FO 10.0 - S008, S009, S010, S011, S012, S013, S014-->
+<!--
+		<typeAlias type="com.bnp.bnpux.common.vo.DiscountDetailsUxVO" alias="DiscountDetailsUxVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.InvoiceDetailsUxVO" alias="InvoiceDetailsUxVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.CreditNotesDetailsUxVO" alias="CreditNotesDetailsUxVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.IndicativeChargesUxVO" alias="IndicativeChargesUxVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.CommitmentFeeUxVO" alias="CommitmentFeeUxVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.PaymentOrderListDetailsVO" alias="PaymentOrderListDetailsVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.OrganizationVO" alias="OrganizationVO"/>
+-->
+		<!-- Discount Popup Details - FO 10.0 - S008, S009, S010, S011, S012, S013, S014 -->
+		
+		<!-- Added for Advanced filter related user stories-->
+		<!--<typeAlias type="com.bnp.bnpux.common.vo.AdvancedFilterVO" alias="advancedFilterVO"/>-->
+		
+		<!-- File Management screen - FO 10.0 - S2005, S2007  -->
+<!--
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.FileMgmtRequestVO" alias="fileMgmtRequestVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.responseVO.FileMgmtResponseVO" alias="fileMgmtResponseVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.FileMgmtListVO" alias="fileMgmtListVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.FileMgmtSummaryVO" alias="fileMgmtSummaryVO"/>
+-->
+
+		<!-- File Management screen - FO 10.0 - S2005, S2007  -->
+		
+<!--
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.SCFAttachUploadRequestVO" alias="scfAttachUploadReqVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.LimitUtilReportRequestVO" alias="limitUtilReportRequestVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.requestVO.BuyerAcceptanceRequestVO" alias="buyerAcceptanceRequestVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.BuyerAcceptanceSummaryVO" alias="buyerAcceptanceSummaryVO"/>
+		<typeAlias type="com.bnp.bnpux.vo.responseVO.BuyerAcceptanceResponseVO" alias="buyerAcceptanceResponseVO"/>
+		<typeAlias type="com.bnp.bnpux.common.vo.BuyerAcceptanceListVO" alias="buyerAcceptanceListVO"/>
+		 <typeAlias alias="limitUtilReportTreeVO" type="com.bnp.scm.services.discounting.vo.LimitUtilReportTreeVO" />
+-->
+	</typeAliases>
+    <mappers>
+		<!--
+        <mapper resource="maps/LoginOperations.xml" />
+        <mapper resource="maps/UserPreference.xml" />
+        <mapper resource="maps/CreateUser.xml" />
+        <mapper resource="maps/CacheOperations.xml" />
+        <mapper resource="maps/CommonOperations.xml" />
+        -->
+        
+        <!-- Added for New UX 9.0 - User story C10 audit trail starts -->
+        <mapper resource="maps/CacheOperations.xml" />
+        <!-- Added for New UX 9.0 - User story C10 audit trail ends -->
+        
+        <!-- Added for Payment Order screen  -->
+		<!--
+        <mapper resource="maps/PaymentOrder.xml" />
+        -->
+        
+        <!-- Added for Transaction screen  -->
+        <!--<mapper resource="maps/Transaction.xml" />-->
+        
+		<!--<mapper resource="maps/FilterOperations.xml" />-->
+		<!-- Added for Settlement screen  -->
+		<!--<mapper resource="maps/SettlementOperations.xml" />-->
+		
+		<!-- Added for Report screen  -->
+		<!--<mapper resource="maps/ReportOperations.xml" />-->
+		
+		<!--<mapper resource="maps/HolidayOperations.xml" />-->
+		
+		<!-- Added for Transaction screen  -->
+        <!--<mapper resource="maps/AdvancedFilter.xml" />-->
+        
+        <!-- Added for File Management screen - FO 10.0 - S2005, S2007  -->
+        <!--<mapper resource="maps/FileMgmtOperations.xml" />-->
+        
+<!--
+        <mapper resource="maps/BuyerAcceptanceOperations.xml"/>
+        
+        <mapper resource="maps/EmailNotifications.xml"/>
+        
+        <mapper resource="maps/CreditNoteInqReportOperations.xml"/>
+        <mapper resource="maps/LimitUtilizationReportOperations.xml"/>
+        <mapper resource="maps/SCFAttachUploadOperations.xml"/>
+        <mapper resource="maps/SettlmntDueReminderRptOperations.xml"/>
+        <mapper resource="maps/DashboardLimitUtilReportOperations.xml"/>
+        <mapper resource="maps/ViewScheduledReport.xml"/>
+         <mapper resource="maps/PaymentReportOperations.xml"/>
+        <mapper resource="maps/DiscTransReportOperations.xml"/>
+        <mapper resource="maps/RemittanceReportOperations.xml"/>
+		<mapper resource="maps/AgingReportOperations.xml"/>
+		<mapper resource="maps/EarlyPaymentRebate.xml"/>
+-->
+    </mappers>
+    
+</configuration>
+

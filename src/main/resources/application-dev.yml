@@ -1,0 +1,7 @@
+apiGateway:
+  jndiName: jdbc/GSCSDatasource
+
+# logging:
+#  pattern:
+#    console:
+#  file: <PLEASE PUT THE PATH TO THE LOG FILE>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL MAP Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+		
+<sqlMapConfig>
+<settings useStatementNamespaces="true"/>
+
+<!--
+    <sqlMap resource="TransactionCommonSqlMap.xml"/>
+    <sqlMap resource="BranchOperations.xml"/>
+    <sqlMap resource="CacheSql.xml"/>
+    <sqlMap resource="BankCodeTypes.xml"/>
+    <sqlMap resource="BankCode.xml"/>
+    <sqlMap resource="CountryOperations.xml"/>
+    <sqlMap resource="RegionalAdminUser.xml"/>
+    <sqlMap resource="RoleFunctionOperation.xml"/>
+    <sqlMap resource="CurrencyOperations.xml"/>
+    <sqlMap resource="CurrencyHolidayOperations.xml"/>
+    <sqlMap resource="BankAdminUser.xml"/>
+    <sqlMap resource="BankAdminRoles.xml"/>
+    <sqlMap resource="PaymentMethod.xml"/>
+    <sqlMap resource="AssignBankAdminRoles.xml"/>
+    <sqlMap resource="BranchDiscounting.xml"/>
+    <sqlMap resource="PaymentMethodByBranch.xml"/>
+    <sqlMap resource="PaymentMethodScheduler.xml"/>
+    <sqlMap resource="SupportBranchOperations.xml"/>
+    <sqlMap resource="ManualFileUpload.xml"/>
+    <sqlMap resource="ReleaseFileOperations.xml"/>
+    <sqlMap resource="InvoiceDetails.xml"/>
+    <sqlMap resource="LoginOperations.xml"/>
+    <sqlMap resource="DiscountingScheduler.xml"/>
+    <sqlMap resource="DiscountSpread.xml"/>
+    <sqlMap resource="FacilityOperations.xml"/>
+    <sqlMap resource="ChangePassword.xml"/>
+    <sqlMap resource="DiscountOperations.xml"/>
+    <sqlMap resource="LimitSetupOperations.xml"/>
+    <sqlMap resource="CounterPartyLimitOperations.xml"/>
+    <sqlMap resource="DiscountingAccountSetUp.xml"/>
+    <sqlMap resource="DiscountingDefinition.xml"/>
+    <sqlMap resource="DiscountingRates.xml"/>
+    <sqlMap resource="CreateUser.xml"/>
+    <sqlMap resource="Entitlement.xml"/>
+    <sqlMap resource="LinkUserOrganizationRequest.xml"/>
+    <sqlMap resource="LinkBankAdminToBranch.xml"/>
+    <sqlMap resource="BankAdminUserUpdate.xml"/>
+    <sqlMap resource="OrganizationGroup.xml"/>
+    <sqlMap resource="BuyerAccount.xml"/>
+    <sqlMap resource="SupplierAccount.xml"/>
+    <sqlMap resource="CreateOrganizationOperations.xml"/>
+    <sqlMap resource="LinkOrgForDiscounting.xml"/>
+    <sqlMap resource="DiscountAutoRule.xml"/>
+    <sqlMap resource="BranchHoliday.xml"/>
+    <sqlMap resource="ErpScheduler.xml"/>
+-->
+    <sqlMap resource="ProgramLimit.xml"/>
+    <sqlMap resource="LimitCheckOperations.xml"/>
+    <!--
+    <sqlMap resource="PrinterDefinition.xml"/>
+    <sqlMap resource="EventConfig.xml"/>
+    <sqlMap resource="OrgEmailGroup.xml"/>
+    <sqlMap resource="DueDateAdjustment.xml"/>
+    <sqlMap resource="ReqImpAdminCert.xml"/>
+    <sqlMap resource="IssueBankAdminCert.xml"/>
+    <sqlMap resource="BankAdminEmailGroup.xml"/>
+    <sqlMap resource="ScheduleDownload.xml"/>
+    <sqlMap resource="Settlements.xml" />
+    <sqlMap resource="AuditTrailOperations.xml"/>
+    <sqlMap resource="UserCertManagement.xml"/>
+    <sqlMap resource="CertificatepinPrint.xml"/>
+    <sqlMap resource="CertificatePasswordPrint.xml"/>
+    <sqlMap resource="AutoDiscounting.xml"/>
+    <sqlMap resource="CertMgmt.xml"/>
+    <sqlMap resource="EventLogOperations.xml"/>
+	<sqlMap resource="CommonAccess.xml"/>
+    <sqlMap resource="DiscountStatus.xml"/>
+	<sqlMap resource="SettlementStatus.xml"/>
+	<sqlMap resource="UserPreference.xml"/>
+	<sqlMap resource="FinancialInquiry.xml"/>
+	<sqlMap resource="ResendSuppress.xml"/>
+	<sqlMap resource="Discount.xml"/>
+	<sqlMap resource="GroupLimitSetup.xml"/>
+	<sqlMap resource="ForexOperations.xml"/>
+	<sqlMap resource="AdvanceSearchSql.xml"/>
+	<sqlMap resource="BuyerAcceptance.xml"/>
+	<sqlMap resource="CertManagement.xml"/>	
+	<sqlMap resource="BankMarginAccount.xml"/>
+	<sqlMap resource="DisputeCode.xml"/>
+	<sqlMap resource="PaymentAdjustmentCode.xml"/>
+	<sqlMap resource="LinkOrgForEipp.xml"/>
+	<sqlMap resource="DisputeAllocRule.xml"/>
+	<sqlMap resource="BillTypeDefinition.xml"/>
+	<sqlMap resource="BillTypeLogo.xml"/>
+	<sqlMap resource="Department.xml"/>
+	<sqlMap resource="DeptAllocRule.xml"/>
+	<sqlMap resource="BillTypeStylesheet.xml"/>
+	<sqlMap resource="Branding.xml"/>
+	<sqlMap resource="EippFileUpload.xml"/>	
+	<sqlMap resource="EippInvoiceAndCNDetails.xml"/>	
+	<sqlMap resource="JobConfig.xml"/>	
+	<sqlMap resource="JobExecHist.xml"/>
+	<sqlMap resource="JobInput.xml"/>
+	<sqlMap resource="JobScheduledDays.xml"/>
+	<sqlMap resource="JobScheduledHours.xml"/>
+	<sqlMap resource="JobScheduledMinis.xml"/>
+	<sqlMap resource="JobScheduleInfo.xml"/>
+	<sqlMap resource="JobScheduledMonthOfDay.xml"/>
+	<sqlMap resource="ScheduleReport.xml"/>
+	<sqlMap resource="ScheduleReportParam.xml"/>
+	<sqlMap resource="Report.xml"/>
+	<sqlMap resource="EippReleaseOperations.xml"/>
+	<sqlMap resource="CNUtilization.xml"/>
+    	<sqlMap resource="EippERPEvent.xml"/>
+	<sqlMap resource="DepartmentApproval.xml"/>
+	<sqlMap resource="EippCNInquiry.xml"/>	
+	<sqlMap resource="DisputeInquiry.xml"/>
+	<sqlMap resource="PendingAction.xml"/>
+	<sqlMap resource="EippNonFinInq.xml"/>
+	<sqlMap resource="DisputeMgmt.xml"/>
+	<sqlMap resource="EippInvoiceCancellation.xml"/>
+-->
+
+
+<!-- ADDED FOR EDRAFT - START -->
+<!--
+	<sqlMap resource="EDraftTransactionInq.xml"/>
+	<sqlMap resource="EDraftDashBoardOperation.xml"/>
+	<sqlMap resource="EDraftCollection.xml"/>
+	<sqlMap resource="EDraftEndorsement.xml"/>
+	<sqlMap resource="EDraftDiscountRequest.xml"/>
+	<sqlMap resource="EDraftEndorseCollection.xml"/>
+	<sqlMap resource="EdraftInterface.xml"/>
+	<sqlMap resource="PaymentReminder.xml"/>
+	<sqlMap resource="EDraftPayment.xml"/>
+	<sqlMap resource="EDraftFileUpload.xml"/>
+	<sqlMap resource="EDraftDiscountFU.xml"/>
+	<sqlMap resource="EDraftEndorsementFU.xml"/>
+	<sqlMap resource="EDraftPaymentFU.xml"/>
+	<sqlMap resource="EDraftRevocation.xml"/>
+	<sqlMap resource="EDraftBank.xml"/>
+	<sqlMap resource="EDraftStatusUpdate.xml"/>
+	<sqlMap resource="EDraftCommon.xml"/>
+	<sqlMap resource="EDraftUserHrchy.xml"/>
+	<sqlMap resource="EDraftAuthMatx.xml"/>	
+	<sqlMap resource="EDraftPledgeRequest.xml"/>
+	<sqlMap resource="EDraftPledgeRelSoff.xml"/>
+	<sqlMap resource="EDraftPledgeReqSoff.xml"/>		
+	<sqlMap resource="EDraftPledgeRelease.xml"/>
+	<sqlMap resource="EDraftGuaranteeRequest.xml"/>
+	<sqlMap resource="EDraftGuaranteeReceived.xml"/>
+	<sqlMap resource="EDraftWithDrawRequest.xml"/>
+	<sqlMap resource="EDraftIssuance.xml"/>
+	<sqlMap resource="EDraftAcceptance.xml"/>
+	<sqlMap resource="EDraftAcceptancePresent.xml"/>
+	<sqlMap resource="EDraftCollectionReq.xml"/>
+	<sqlMap resource="EDraftPmtReqRecd.xml"/>
+	<sqlMap resource="EDraftRecourseRequest.xml"/>
+	<sqlMap resource="EDraftRecourseResponse.xml"/>
+	<sqlMap resource="EDraftRecourseNotification.xml"/>
+	<sqlMap resource="EDraftRepoDiscountRequest.xml"/>
+	<sqlMap resource="EDraftRedemDiscRequest.xml"/>
+	<sqlMap resource="EDraftGuaranteeFU.xml"/>
+	<sqlMap resource="EDraftMessageMonitoring.xml"/>
+	<sqlMap resource="EdraftRepoDiscFu.xml"/>
+-->
+<!-- ADDED FOR EDRAFT - END -->
+
+<!--
+	<sqlMap resource="TPBank.xml"/>
+	<sqlMap resource="TPBankUser.xml"/>
+	<sqlMap resource="TPDiscOperations.xml"/>
+	<sqlMap resource="TPBankAccount.xml"/>
+	<sqlMap resource="ToolKitFileOperations.xml"/>
+	<sqlMap resource="MessageOperations.xml"/>
+	<sqlMap resource="TPFundTransfer.xml"/>
+	<sqlMap resource="DiscountRequest.xml"/>
+	<sqlMap resource="ToolkitRelease.xml"/>
+	<sqlMap resource="CreditNoteInquiry.xml"/>
+	<sqlMap resource="JobMonitoring.xml"/>	
+	<sqlMap resource="JobScheduler.xml"/>
+	<sqlMap resource="JobScheduledMonths.xml"/>
+-->
+
+	<!-- Added for Insurance -->
+<!--
+ 	<sqlMap resource="InsuranceLimit.xml"/>
+    <sqlMap resource="LimitUtilReport.xml"/>
+    <sqlMap resource="InsuranceLimitCheck.xml"/>
+-->
+
+    <!-- Added in Rel 2.2 - Common Operations -->
+<!--
+    <sqlMap resource="CommonOperations.xml"/>
+-->
+    <!-- Added for Marketing & Onboarding Site Maintenance -->
+<!--
+    <sqlMap resource="KycLglDoc.xml"/>
+    <sqlMap resource="EnableMrktgSite.xml"/>
+     <sqlMap resource="CustSptLight.xml"/>
+-->
+
+         <!-- Added for Marketing OnBoard Site -->
+<!--
+	<sqlMap resource="MrktgOnBrdSite.xml"/>
+	<sqlMap resource="InvEmailTemplateSetup.xml"/>
+    <sqlMap resource="SupplrOnBrdg.xml"/>
+-->
+	<!-- Added for EIPP Phase 2 -->
+<!--
+	<sqlMap resource="DirectDebitMandate.xml"/>
+	<sqlMap resource="MarketPlaceAccount.xml"/>
+    <sqlMap resource="OrgOnBrdTempSetup.xml"/> 
+    <sqlMap resource="MrktgWebSite.xml"/>
+    <sqlMap resource="BillingAccount.xml"/>
+    <sqlMap resource="AutoPaymentRule.xml"/>
+    <sqlMap resource="AutoAuthorizationRule.xml"/>
+    <sqlMap resource="DefaultCharges.xml"/>
+-->
+		 <!-- Added for EIPP PhaseII -->
+<!--
+    <sqlMap resource="RepayRule.xml"/>
+	<sqlMap resource="LinkRepayRule.xml"/>
+	<sqlMap resource="DisAllowPayMethod.xml" />
+    <sqlMap resource="DefaultSupplierAccountSetup.xml"/>
+    <sqlMap resource="CustomerChargeMatrix.xml"/>
+    
+     <sqlMap resource="PreAprvdSupplrUpload.xml"/>
+      <sqlMap resource="PreAprvdSupplrRelease.xml"/>
+      <sqlMap resource="PreAprvdSupplrDE.xml"/>
+     <sqlMap resource="NewSupplrSummary.xml"/>
+        <sqlMap resource="NewSupplrMgmt.xml"/>
+        
+     <sqlMap resource="FileTypeDefinition.xml"/>
+-->
+
+	  <!-- Added for Matching & Reconcillation -->
+<!--
+      <sqlMap resource="MatchRuleDefn.xml"/>
+ 	  <sqlMap resource="MatchRuleDefnCPOrg.xml"/>
+	  <sqlMap resource="MatchRule.xml"/>
+	  <sqlMap resource="MatchRuleDetails.xml"/>
+	  <sqlMap resource="MatchSchedule.xml"/>
+      <sqlMap resource="AuthMatrix.xml"/>
+ 	  <sqlMap resource="TransactionOperations.xml"/>
+ 	  <sqlMap resource="MatchSummary.xml"/>
+-->
+
+       <!-- Added for Payment Status Update MFU -->
+<!--
+       <sqlMap resource="EippPymtStatusUpdate.xml" />
+       <sqlMap resource="AttachmentUploadOperations.xml"/>
+	<sqlMap resource="PaymentOperations.xml"/>
+	<sqlMap resource="EippPaymentMessage.xml"/>
+	<sqlMap resource="PaymentAuthorization.xml"/>	
+      <sqlMap resource="PrintPmtAdvice.xml"/>
+-->
+
+ <!-- Added for EIPP Billing Customer Charges MFU -->
+
+<!--
+            	<sqlMap resource="ViewBillingAdvice.xml"/>
+         		 <sqlMap resource="EIPPGenerateManualBill.xml" />	
+<sqlMap resource="EippBillingChargeCount.xml" />	   
+         <sqlMap resource="SupplierCashFlowReport.xml"/>
+    <sqlMap resource="DailyPaymentReport.xml"/>
+    <sqlMap resource="FinancialInquiryReport.xml"/>
+    <sqlMap resource="BuyerCashFlowReport.xml"/>
+    <sqlMap resource="InvoiceOutstandingReport.xml"/>    
+    <sqlMap resource="MatchingRecon.xml"/>       
+-->
+    <!--<sqlMap resource="MatchingAndReconcilationReport.xml"/>--> <!-- Added for Rel 3.0 Matching and Reconcilation Reports -->
+    <!--<sqlMap resource="EippMatchingMessage.xml"/>-->
+
+     	<!--EWARE XML FILE List Start -->
+  	<!--<sqlMap resource="FixedReportOperation.xml"/>
+	<sqlMap resource="DocSetSummary.xml"/>
+	<sqlMap resource="DocSetSearch.xml"/>
+	<sqlMap resource="EwareCacheSql.xml"/>
+	<sqlMap resource="InvoiceDetailsSearch.xml"/>
+	<sqlMap resource="CommentDetails.xml"/>
+	<sqlMap resource="AuthorizeDocSetSearch.xml"/>
+	<sqlMap resource="RegulatoryScrutiny.xml"/>
+	
+	--><!--  Added by Sonika for E-Ware    --><!-- 
+	<sqlMap resource="BEInitiationOperations.xml"/>
+	<sqlMap resource="BEReturn.xml"/>
+	--><!--  Ended by Sonika for E-Ware   -->   
+	
+	<!--  Added by Nidhi for E-Ware    --><!-- 
+	<sqlMap resource="BranchOperationsSql.xml"/>
+	<sqlMap resource="DocSetInquirySearch.xml"/> 
+	<sqlMap resource="BOEInquirySql.xml"/>  
+	<sqlMap resource="BOEBranchAckQueSql.xml"/>	
+	--><!--  Ended by Nidhi for E-Ware   --><!--   
+	<sqlMap resource="EW_DocumentUpload.xml"/>
+    <sqlMap resource="ResponseTBCustomer.xml"/>
+	<sqlMap resource="BrOpDocRetQueue.xml"/>
+	<sqlMap resource="BrScrutinyDoc.xml"/>
+ 	<sqlMap resource="BEBranchScrutiny.xml"/> 
+	
+	--><!--<sqlMap resource="ewarePaymentInit.xml"/>
+	
+	--><!--  Added by Ram for Payment    --><!-- 
+	<sqlMap resource="PaymentDetails.xml"/>
+	--><!--  Added by Ram for Payment    --> 
+	<!--  Added by Ram for Atlas2 Screen    -->
+	<!--  Added by Ram for Atlas 2 Screen    --> 
+	<!--  Added for EWARE BOE - START  --><!--
+	<sqlMap resource="RegulatoryScrutinyBE.xml"/>
+	--><!--  Added for Eware BOE - END   --> 
+	
+	<!--Added by Priya for BE Authorization-Static Module --><!--
+	<sqlMap resource="BEAuthorization.xml"/>
+	--><!--EWARE XML FILE List End -->
+	<!--Added by Priya for CreateUserGroup-Static Module --><!--
+	<sqlMap resource="OrgUserGroupDetails.xml"/>
+	-->
+	<!--  Added by Ram for Exception Payment Screen    --><!--
+	 <sqlMap resource="ExceptionPayment.xml"/>
+	--><!--  Added by Ram for Exception Payment Screen    --> 
+	<!--  Added by Dipti for Audit Trial Report    --><!--
+	<sqlMap resource="AuditTrialReport.xml"/>
+	--><!--  Added by Ram for Mail Service    --><!--
+	 <sqlMap resource="EwareMailSql.xml"/>
+	--><!--  Added by Ram for Mail Service    -->   
+
+	 <!--  <sqlMap resource="AtlasDetailsSearch.xml"/>
+	<sqlMap resource="LinkOrgAndBeneficiary.xml"/> -->
+<!--
+	<sqlMap resource="DiscountProcess.xml"/>
+   <sqlMap resource="CommonFileOperations.xml"/>
+	<sqlMap resource="RateRefreshOperations.xml"/>
+	<sqlMap resource="DiscountConfirmationMFU.xml"/>
+	<sqlMap resource="TpDiscConfirmOperations.xml"/>
+	<sqlMap resource="EStatementBranding.xml"/>    
+-->
+	<!-- ESTATEMENT -->
+<!--
+	<sqlMap resource="eStatementReg.xml"/>
+	<sqlMap resource="EstmtGeneration.xml"/>
+	<sqlMap resource="eStatementinquiry.xml"/>
+	<sqlMap resource="eStatUserAccess.xml"/>
+	<sqlMap resource="UpdateSettlement.xml"/>	
+	<sqlMap resource="EDraftWarehousingInq.xml"/>
+	<sqlMap resource="UpdSettlementOperations.xml"/>	
+	
+	<sqlMap resource="SupplierTracking.xml"/>
+	<sqlMap resource="OfferTracking.xml"/>
+-->
+	<!--  QC 3706-->
+	<!--<sqlMap resource="DiscountRatesReport.xml" />-->
+	<!-- Added for CSC554 -->
+<!--
+	<sqlMap resource="ScmDashboard.xml"/>
+        <sqlMap resource="SCFAttachmentUpdOperations.xml"/>
+-->
+	<!-- SEPA -->
+<!--
+	<sqlMap resource="SEPACollection.xml"/>
+-->
+	<!-- -Added for Funding Account -->
+<!--
+	<sqlMap resource="FundingAccount.xml"/>
+	<sqlMap resource="DiscountCharges.xml"/>
+	<sqlMap resource="ReportDesigner.xml"/>
+	<sqlMap resource="CustomReport.xml"/>
+-->
+
+	<!-- -Added for R6.0 Holiday Calendar and Organization Holiday-->
+   <!--<sqlMap resource="OrganizationHoliday.xml"/>-->
+	
+	<!-- Ability to Link User Implementation-->
+	<!--<sqlMap resource="LinkBankAdminToOrganization.xml"/>-->
+	
+	<!-- FO 5.0 - I3- Rollover - Start -->
+	<!--<sqlMap resource="RolloverDiscountOperations.xml"/>-->
+	<!-- FO 5.0 - I3- Rollover - End -->
+	
+	<!-- Unfunded Changes - Start -->
+	<!--<sqlMap resource="CommitmentFeeCalc.xml"/>-->
+	
+	<!--<sqlMap resource="ComtFeePymtStatusUpdate.xml"/>-->
+	
+	<!-- Unfunded Changes - End -->
+	
+	<!--<sqlMap resource="WidgetDetails.xml"/>-->
+	
+	<!-- 	Added for R7.0 - Marketing Material Changes - Start -->
+		<!--<sqlMap resource="MrktgMaterialOperations.xml"/>-->
+	<!-- 	Added for R7.0 - Marketing Material Changes - End -->
+<!--
+	<sqlMap resource="AssignReport.xml"/>
+	<sqlMap resource="ReportViewer.xml"/>
+-->
+
+	<!-- Added for R8.0 Email Inquiry Changes -->
+	<!--<sqlMap resource="EmailInquiry.xml"/>-->
+
+	<!-- 	Added for R8.0 - Recall Invoices -->
+	<!--<sqlMap resource="RecallInvoice.xml"/>-->
+	
+</sqlMapConfig>
